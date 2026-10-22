@@ -1,0 +1,6 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/jitp.pw.toml"
+hash = "5934354a3e4e6d902f9eb3cd59cfd18845ed5f9d04b7eebbc6e0ec2678300e40"
+metafile = true

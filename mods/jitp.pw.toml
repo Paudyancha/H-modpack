@@ -1,0 +1,13 @@
+name = "JiTP"
+filename = "jitp-neoforge-0.1.0+snapshot.11.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "01997724b6ff566b7b16508e35848a3f1d9bbb13"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9278343
+project-id = 1749629

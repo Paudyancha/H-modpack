@@ -1,0 +1,13 @@
+name = "HDJS"
+author = "Paudyan"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "35f715af602b074fd10bcfa0214119adff98006cb83c4c5afcd4cae57a8bbe60"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.264"
