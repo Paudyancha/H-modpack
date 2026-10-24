@@ -33,10 +33,12 @@ jobs:
         id: toml
         uses: Gu-ZT/toml-reader-action@main
         with:
-          file: pack.toml
+          file: ./pack.toml
           fields: |
             package.name
             package.version
+          debug: true
+
 
       - name: Echo toml
         run: |
