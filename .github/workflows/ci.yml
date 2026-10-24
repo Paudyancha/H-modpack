@@ -41,9 +41,9 @@ jobs:
       - name: capture build artifacts
         uses: actions/upload-artifact@v4.3.3
         with:
-          name: "${{ steps.toml.outputs.package_name }}-${{ steps.toml.outputs.package_version }}"
+          name: "${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}"
           path: |
-            ./${{ steps.toml.outputs.package_name }}-${{ steps.toml.outputs.package_version }}.zip
+            ./${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}.zip
             
             
      
