@@ -1,4 +1,3 @@
-#file: noinspection SpellCheckingInspection
 name: CI for H-modpack
 on:
   workflow_dispatch:
@@ -30,7 +29,7 @@ jobs:
       - name: pack curseforge
         run: packwiz curseforge export
 
-      - name: 读取 TOML
+      - name: Read TOML
         id: toml
         uses: Gu-ZT/toml-reader-action@main
         with:
@@ -39,12 +38,19 @@ jobs:
             package.name
             package.version
 
+      - name: Echo toml
+        run: |
+          echo ${{ steps.toml.outputs.package_name }}
+          echo ${{ steps.toml.outputs.package_version }}
+
       - name: capture build artifacts
         uses: actions/upload-artifact@v4.3.3
         with:
           name: "${{ steps.toml.outputs.package_name }}-${{ steps.toml.outputs.package_version }}"
           path: |
             ./${{ steps.toml.outputs.package_name }}-${{ steps.toml.outputs.package_version }}.zip
+            
+            
      
             
         
