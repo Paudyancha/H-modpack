@@ -1,0 +1,44 @@
+#file: noinspection SpellCheckingInspection
+name: CI for H-modpack
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - release/**
+      - dev/**
+    paths:
+      - .github/workflows/ci.yml
+      - mods/**
+      - index.toml
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CheckOut
+        uses: actions/checkout@v7
+
+      - name: Setup go
+        uses: actions/setup-go@v7
+        with:
+          go-version: '1.2.4'
+
+      - name: Install Packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: pack curseforge
+        run: packwiz curseforge export
+
+      - name: pack modrinth
+        run: packwiz modrinth export
+
+      - name: capture build artifacts
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: "ModPack"
+          path: |
+            ./*.zip
+            ./*.mrpack
+            
+        
