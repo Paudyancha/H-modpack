@@ -1,4 +1,4 @@
-name = "HDJS"
+name = "H-modpack"
 author = "Paudyan"
 version = "0.1.0"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "e4a966fa2e51d933d8919414caf5bf8f5c2d89130ace347f3ac607b9e6a2cac4"
+hash = "de38ebb46474b43d00a5c3c4450374ef137c8b6fbde80292d46ec389dfc6cefc"
 
 [versions]
 minecraft = "1.21.1"
