@@ -1,12 +1,12 @@
 name = "H-modpack"
 author = "Paudyan"
-version = "0.1.0"
+version = "0.1.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "de38ebb46474b43d00a5c3c4450374ef137c8b6fbde80292d46ec389dfc6cefc"
+hash = "e9e31f941ecd0f5494a50e7498d899d74709548cd6b10ebf0a776fefd5d9a51d"
 
 [versions]
 minecraft = "1.21.1"
