@@ -1,48 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/ci.yml"
-
-[[files]]
-file = ".idea/checkstyle-idea.xml"
-
-[[files]]
-file = ".idea/dictionaries/project.xml"
-
-[[files]]
-file = ".idea/editorJumperProjectSettings.xml"
-
-[[files]]
-file = ".idea/inspectionProfiles/Project_Default.xml"
-
-[[files]]
-file = ".idea/libraries/HDJS_0_1_0.xml"
-
-[[files]]
-file = ".idea/misc.xml"
-
-[[files]]
-file = ".idea/modules.xml"
-
-[[files]]
-file = ".idea/pack.iml"
-
-[[files]]
-file = ".idea/vcs.xml"
-
-[[files]]
-file = ".idea/workspace.xml"
-
-[[files]]
-file = "README.md"
-
-[[files]]
-file = "build.bat"
-
-[[files]]
-file = "build.sh"
-
-[[files]]
 file = "mods/appleskin.pw.toml"
 metafile = true
 

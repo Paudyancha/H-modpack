@@ -28,9 +28,6 @@ jobs:
       - name: Install Packwiz
         run: go install github.com/packwiz/packwiz@latest
 
-      - name: pack curseforge
-        run: packwiz curseforge export
-
       - name: Read TOML
         id: toml
         uses: Gu-ZT/toml-reader-action@main
@@ -40,12 +37,18 @@ jobs:
             name
             version
 
+      - name: pack curseforge
+        env:
+          PACK_NAME: ${{ steps.toml.outputs.name }}
+          PACK_VERSION: ${{ steps.toml.outputs.version }}
+        run: bash ./build.sh
+
       - name: capture build artifacts
         uses: actions/upload-artifact@v4.3.3
         with:
           name: "${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}"
           path: |
-            ./${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}.zip
+            ./dist/${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}.zip
             
             
      

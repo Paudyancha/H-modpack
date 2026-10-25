@@ -1,1 +1,10 @@
-.DS_Store\n*.log\n
+.DS_Store
+*.log
+build.sh
+*.py
+dist/
+.idea/
+README.md
+.gitattributes
+.gitignore
+.github/**
