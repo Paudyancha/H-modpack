@@ -14,4 +14,7 @@ packwiz refresh
 packwiz cf export -o "${OUT}-client.zip" -s client
 packwiz cf export -o "${OUT}-server.zip" -s server
 
-ls -lh "$OUT"
+echo "===Client==="
+ls -lh "${OUT}-client.zip"
+echo "===Server==="
+ls -lh "${OUT}-server.zip"
