@@ -1,76 +1,99 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/ci.yml"
+
+[[files]]
+file = ".idea/checkstyle-idea.xml"
+
+[[files]]
+file = ".idea/dictionaries/project.xml"
+
+[[files]]
+file = ".idea/editorJumperProjectSettings.xml"
+
+[[files]]
+file = ".idea/inspectionProfiles/Project_Default.xml"
+
+[[files]]
+file = ".idea/libraries/HDJS_0_1_0.xml"
+
+[[files]]
+file = ".idea/misc.xml"
+
+[[files]]
+file = ".idea/modules.xml"
+
+[[files]]
+file = ".idea/pack.iml"
+
+[[files]]
+file = ".idea/vcs.xml"
+
+[[files]]
+file = ".idea/workspace.xml"
+
+[[files]]
+file = "README.md"
+
+[[files]]
+file = "build.bat"
+
+[[files]]
+file = "build.sh"
+
+[[files]]
 file = "mods/appleskin.pw.toml"
-hash = "3f910a2722d6884203aba5eee8f5c129ea3c2e0b78bc683b2d7b5604fec755f5"
 metafile = true
 
 [[files]]
 file = "mods/controlling.pw.toml"
-hash = "42ffb6f5835250003da6ca3667ff751709ea295faee43b49c365b0f6c1e8f4d8"
 metafile = true
 
 [[files]]
 file = "mods/customskinloader.pw.toml"
-hash = "25a09878132d5c6c598917bddcc8baf3cb3daadcc05ba0544275e9869cd64371"
 metafile = true
 
 [[files]]
 file = "mods/imblocker.pw.toml"
-hash = "859228d5cdf0e852906c19700eaf7e9ff393cfd33b868d4dccbb58b6816595cd"
 metafile = true
 
 [[files]]
 file = "mods/irisshaders.pw.toml"
-hash = "763ed0c115b2b9a1e37e38cb153748c9c3f3c31869fd3d56acfaad54c63e78af"
 metafile = true
 
 [[files]]
 file = "mods/jade.pw.toml"
-hash = "4b0a995f7cfa19951ba585aa320a1f4ef1a755a38b608adcff2f9ddd156b195b"
 metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "d59efc266bf1949c2834fd05448ff6ca06f602f15633d5aea03390173157ac5b"
-metafile = true
-
-[[files]]
-file = "mods/jitp.pw.toml"
-hash = "082dbb6f8acf5213742f06ea3138f25b1af1248f78adb231c7d52b522c34ad8d"
 metafile = true
 
 [[files]]
 file = "mods/just-enough-characters.pw.toml"
-hash = "958101f29147119a423df602445679a0e76fbd70e442383d28babeef419b5469"
 metafile = true
 
 [[files]]
 file = "mods/just-enough-resources-jer.pw.toml"
-hash = "337767763f67158c089f316d511c3ee19f4c2d0aff3561899b2915e8df00e169"
 metafile = true
 
 [[files]]
 file = "mods/poopsky.pw.toml"
-hash = "e19e1a469f2c17db49c3eb955cbe2adf56a1d937cfc9a15e3e48254cc58e5d48"
 metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "f45da2d9525cb355c246a0ed35de86f6b78e553dcf69119d05494803a2e43983"
 metafile = true
 
 [[files]]
 file = "mods/searchables.pw.toml"
-hash = "6c0fac550bb053ee2728144a28819835823dcc6d04ad7897750431fe55100e53"
 metafile = true
 
 [[files]]
 file = "mods/sodium-extra.pw.toml"
-hash = "1f879739b8ea01784133a004b34d8895c0f18a737501b4d3546bf33673384707"
 metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "617ec6e9893d59905035a510fe336addd46a97b6fd28fad88b70713ebf8e69e3"
 metafile = true
