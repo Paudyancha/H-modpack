@@ -48,7 +48,8 @@ jobs:
         with:
           name: "${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}"
           path: |
-            ./dist/${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}.zip
+            ./dist/${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}-client.zip
+            ./dist/${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}-server.zip
             
             
      
