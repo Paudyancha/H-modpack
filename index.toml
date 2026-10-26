@@ -37,6 +37,10 @@ file = "mods/just-enough-resources-jer.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/poopsky-flyimpact.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/poopsky.pw.toml"
 metafile = true
 
