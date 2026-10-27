@@ -5,11 +5,31 @@ file = "mods/appleskin.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/architectury-api.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/customskinloader.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ultimine-forge.pw.toml"
 metafile = true
 
 [[files]]
