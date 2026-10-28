@@ -73,9 +73,21 @@ file = "mods/searchables.pw.toml"
 metafile = true
 
 [[files]]
+file = "mods/smsn.pw.toml"
+metafile = true
+
+[[files]]
 file = "mods/sodium-extra.pw.toml"
 metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
 metafile = true
