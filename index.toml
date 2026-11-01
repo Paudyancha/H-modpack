@@ -45,10 +45,6 @@ file = "mods/ftb-ultimine-forge.pw.toml"
 metafile = true
 
 [[files]]
-file = "mods/imblocker.pw.toml"
-metafile = true
-
-[[files]]
 file = "mods/irisshaders.pw.toml"
 metafile = true
 
@@ -58,10 +54,6 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-metafile = true
-
-[[files]]
-file = "mods/just-enough-characters.pw.toml"
 metafile = true
 
 [[files]]

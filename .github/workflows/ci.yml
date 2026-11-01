@@ -51,6 +51,7 @@ jobs:
           name: "${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}"
           path: |
             ./build/dist/${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}-client.zip
+            ./build/dist/${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}-client-zh_cn.zip
             ./build/dist/${{ steps.toml.outputs.name }}-${{ steps.toml.outputs.version }}-server.zip
             
             
