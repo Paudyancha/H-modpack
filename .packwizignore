@@ -2,6 +2,7 @@
 *.log
 build.sh
 *.py
+build/
 dist/
 .idea/
 README.md
