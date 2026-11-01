@@ -24,6 +24,14 @@ while IFS= read -r -d '' f; do
     want["$f"]=1
 done < <(git -c core.excludesFile="$PWD/.packwizignore" -c core.quotepath=false \
              ls-files -z --others --exclude-standard -- .)
+
+declare -A zh=()
+if [[ -d ./zh-cn ]]; then
+    while IFS= read -r -d '' f; do
+        zh["${f#./zh-cn/}"]=1
+    done < <(find ./zh-cn -type f -print0)
+fi
+
 unset GIT_DIR GIT_WORK_TREE
 
 for rel in "${!want[@]}"; do
@@ -50,11 +58,24 @@ packwiz refresh --build
 packwiz cf export -o "${OUT}-client.zip" -s client
 packwiz cf export -o "${OUT}-server.zip" -s server
 
-packwiz refresh
+overlaid=0
+for rel in "${!zh[@]}"; do
+    [[ -f "./$rel" ]] && cmp -s -- "../zh-cn/$rel" "./$rel" && continue
+    install -D -p "../zh-cn/$rel" "./$rel"
+    overlaid=$((overlaid + 1))
+done
+echo "overlaid ${overlaid} file(s) from zh-cn/"
 
-cd "$(dirname "$0")"
+packwiz refresh --build
+
+packwiz cf export -o "${OUT}-client-zh_cn.zip" -s client
+
+packwiz refresh
 
 echo "===Client==="
 ls -lh "${OUT}-client.zip"
+ls -lh "${OUT}-client-zh_cn.zip"
 echo "===Server==="
 ls -lh "${OUT}-server.zip"
+
+cd ..
